@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/99899855f6.js" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and Minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Madmin</title>
+</head>
+<body>
+    <nav class="light-green darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Madmin</a>
+                
+                <!-- sidenav trigger -->
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"> 
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active">
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="posts.html">Posts</a>
+                    </li>
+                    <li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+                    <li>
+                        <a href="comments.html">Comments</a>
+                    </li>
+                    <li>
+                        <a href="users.html">Users</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- sidenav -->
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="img/greenbg.jpg" alt="">
+            </div>
+            <a href="#">
+                <img src="img/woman1.jpg" alt="" class="circle">
+            </a>
+            <a href="#">
+                <span class="name white-text">Miss Rodney Lubowitz</span>
+            </a>
+            <a href="#">
+                <span class="email white-text">lubowitz@gmail.com</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <a href="index.html">Dashboard
+            <i class="material-icons">dashboard</i>
+        </a>
+    </li>
+    <li class="active">
+        <a href="posts.html">
+            <i class="material-icons">edit</i>
+            Posts</a>
+    </li>
+    <li>
+        <a href="categories.html">Categories</a>
+    </li>
+    <li>
+        <a href="comments.html">Comments</a>
+    </li>
+    <li>
+        <a href="users.html">Users</a>
+    </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li>
+        <a class="subheader">Account Controls</a>
+    </li>
+    <li><a href="index.html" class="waves-effect">Log Out</a>
+    </li>
+</ul>
+
+<div style="height: 680px;"></div>
+
+<!-- Footer -->
+<footer class="section green darken-4 white-text center">
+    <p>Madmin Panel Copright &copy; 2021</p>
+</footer>
+
+    <!-- JQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Compiled & Minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Sidenav
+        $('.sidenav').sidenav();
+    })
+</script>
+</body>
+</html>
